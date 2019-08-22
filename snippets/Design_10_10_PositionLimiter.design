@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<groups>
+<group id="2">
+<init comment="false" x="15" y="15">
+<group id="-1"/>
+</init>
+</group>
+<group id="1">
+<step comment="false" x="15" y="88">
+<group id="-1">
+<comment-long comment="false" x="26" y="113">
+<int id="0" val="Don&amp;#039;t go off the left side."/>
+</comment-long>
+<if comment="false" x="26" y="193">
+<group id="-1">
+<setx comment="false" x="37" y="231">
+<ACTOR eid="this" id="0"/>
+<int id="1" val="2"/>
+</setx>
+</group>
+<less comment="false" id="0" x="0" y="0">
+<getx comment="false" id="0" x="0" y="0">
+<ACTOR eid="this" id="0"/>
+</getx>
+<int id="1" val="1"/>
+</less>
+</if>
+<comment-long comment="false" x="26" y="270">
+<int id="0" val="Don&amp;#039;t go off the right side."/>
+</comment-long>
+<if comment="false" x="26" y="350">
+<group id="-1">
+<setx comment="false" x="37" y="393">
+<ACTOR eid="this" id="0"/>
+<minus comment="false" id="1" x="0" y="0">
+<minus comment="false" id="0" x="0" y="0">
+<scenew comment="false" id="0" x="0" y="0"/>
+<int id="1" val="2"/>
+</minus>
+<getwidth comment="false" id="1" x="0" y="0">
+<ACTOR eid="this" id="0"/>
+</getwidth>
+</minus>
+</setx>
+</group>
+<more comment="false" id="0" x="0" y="0">
+<plus comment="false" id="0" x="0" y="0">
+<getx comment="false" id="0" x="0" y="0">
+<ACTOR eid="this" id="0"/>
+</getx>
+<getwidth comment="false" id="1" x="0" y="0">
+<ACTOR eid="this" id="0"/>
+</getwidth>
+</plus>
+<minus comment="false" id="1" x="0" y="0">
+<scenew comment="false" id="0" x="0" y="0"/>
+<int id="1" val="1"/>
+</minus>
+</more>
+</if>
+</group>
+</step>
+</group>
+<group id="3">
+<collide comment="false" x="15" y="478">
+<group id="-1"/>
+</collide>
+</group>
+<group id="0">
+<draw comment="false" x="15" y="551">
+<group id="-1"/>
+</draw>
+</group>
+<group id="-1"/>
+</groups>
