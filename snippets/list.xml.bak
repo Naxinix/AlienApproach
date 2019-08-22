@@ -81,4 +81,10 @@
         <blocks/>
         <events/>
     </snippet>
+    <snippet attachedevent="true" class="scripts.SceneEvents_1" classname="scripts.SceneEvents_1" desc="Scene Specific Events" description="Scene Specific Events" design="true" drawOrder="0" id="12" name="SceneEvents_1" oid="-1" package="scripts." sceneid="1" shared="false" type="scene">
+        <blocks/>
+        <events>
+            <event displayName="Any Key" enabled="true" id="1" name="event-key-any-press-release" order="1" repeats="true"/>
+        </events>
+    </snippet>
 </pack>

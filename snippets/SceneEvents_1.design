@@ -1,2 +1,17 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<groups/>
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<groups>
+    <group eventID="1" id="0">
+        <event-key-any-press-release comment="false" x="15" y="15">
+            <group eventID="1" id="-1">
+                <print comment="false" x="26" y="47">
+                    <key-char comment="false" id="0" x="0" y="0"/>
+                </print>
+                <print comment="false" x="26" y="72">
+                    <key-code comment="false" id="0" x="0" y="0"/>
+                </print>
+            </group>
+            <int id="0" val="0"/>
+        </event-key-any-press-release>
+    </group>
+    <group eventID="1" id="-1"/>
+</groups>
