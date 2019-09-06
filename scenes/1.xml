@@ -5,7 +5,7 @@
         <background blendMode="normal" customScrollFactor="false" id="3" locked="true" name="Desert Background" opacity="100" order="3" rid="18" scrollFactorX="1.0" scrollFactorY="1.0" visible="true"/>
         <layer blendMode="normal" color="0,255,0" id="2" locked="false" name="Layer 2" opacity="100" order="2" scrollFactorX="1.0" scrollFactorY="1.0" visible="false"/>
         <layer blendMode="normal" color="100,168,234" id="0" locked="false" name="Layer 0" opacity="100" order="1" scrollFactorX="1.0" scrollFactorY="1.0" visible="false"/>
-        <layer blendMode="normal" color="0,0,255" id="1" locked="false" name="Layer 1" opacity="100" order="0" scrollFactorX="1.0" scrollFactorY="1.0" visible="false"/>
+        <layer blendMode="normal" color="0,0,255" id="1" locked="false" name="Layer 1" opacity="100" order="0" scrollFactorX="1.0" scrollFactorY="1.0" visible="true"/>
     </layers>
     <joints/>
     <regions/>
