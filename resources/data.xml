@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <pack>
-    <actor adamp="0.0" ascale="false" atlasID="0" bodytype="2" continuous="false" desc="" eventsnippetid="-1" fixedrot="true" fric="0.2" gid="4" id="7" ignoreg="true" inertia="0.01" ldamp="0.0" mass="0.1" name="Alien Cruiser" oid="-1" pausable="true" physicsMode="0" rest="0.0" shared="false" sprite="8" static="false">
+    <actor adamp="0.0" ascale="false" atlasID="0" bodytype="2" continuous="false" desc="" eventsnippetid="19" fixedrot="true" fric="0.2" gid="4" id="7" ignoreg="true" inertia="0.01" ldamp="0.0" mass="0.1" name="Alien Cruiser" oid="-1" pausable="true" physicsMode="0" rest="0.0" shared="false" sprite="8" static="false">
         <snippets>
             <s enabled="true" id="0">
                 <prop id="2147483647" list="0" val="thisactor"/>
                 <prop id="2" list="0" val="1.2"/>
                 <prop id="3" list="0" val="false"/>
             </s>
-            <s enabled="true" id="1">
+            <s enabled="false" id="1">
                 <prop id="2147483647" list="0" val="thisactor"/>
             </s>
             <s enabled="true" id="2">

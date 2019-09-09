@@ -61,17 +61,14 @@ import com.stencyl.graphics.shaders.BloomShader;
 
 
 
-class Design_1_1_DieWhenHit extends ActorScript
+class Design_20_20_DieOnCollision extends ActorScript
 {
-	public var _hits:Float;
 	
 	
 	public function new(dummy:Int, actor:Actor, dummy2:Engine)
 	{
 		super(actor);
 		nameMap.set("Actor", "actor");
-		nameMap.set("hits", "_hits");
-		_hits = 0;
 		
 	}
 	
@@ -83,9 +80,6 @@ class Design_1_1_DieWhenHit extends ActorScript
 		{
 			if(wrapper.enabled)
 			{
-				/* See 'Explode on Death' behavior to see the logic for HandleDeath. */
-				actor.shout("_customEvent_" + "HandleDeath");
-				recycleActor(actor.getLastCollidedActor());
 				recycleActor(actor);
 			}
 		});

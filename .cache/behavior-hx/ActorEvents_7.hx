@@ -61,32 +61,48 @@ import com.stencyl.graphics.shaders.BloomShader;
 
 
 
-class Design_1_1_DieWhenHit extends ActorScript
+class ActorEvents_7 extends ActorScript
 {
-	public var _hits:Float;
+	public var _HitCount:Float;
+	public var _Bullet:Actor;
+	public var _instance:Actor;
 	
 	
 	public function new(dummy:Int, actor:Actor, dummy2:Engine)
 	{
 		super(actor);
-		nameMap.set("Actor", "actor");
-		nameMap.set("hits", "_hits");
-		_hits = 0;
+		nameMap.set("HitCount", "_HitCount");
+		_HitCount = 0;
+		nameMap.set("Bullet", "_Bullet");
+		nameMap.set("instance", "_instance");
 		
 	}
 	
 	override public function init()
 	{
 		
+		/* ======================== When Creating ========================= */
+		_HitCount = 0;
+		
 		/* ======================== Something Else ======================== */
 		addCollisionListener(actor, function(event:Collision, list:Array<Dynamic>):Void
 		{
 			if(wrapper.enabled)
 			{
-				/* See 'Explode on Death' behavior to see the logic for HandleDeath. */
-				actor.shout("_customEvent_" + "HandleDeath");
+				_HitCount = (_HitCount + 1);
 				recycleActor(actor.getLastCollidedActor());
-				recycleActor(actor);
+			}
+		});
+		
+		/* ======================== When Updating ========================= */
+		addWhenUpdatedListener(null, function(elapsedTime:Float, list:Array<Dynamic>):Void
+		{
+			if(wrapper.enabled)
+			{
+				if((_HitCount == 3))
+				{
+					recycleActor(actor);
+				}
 			}
 		});
 		
