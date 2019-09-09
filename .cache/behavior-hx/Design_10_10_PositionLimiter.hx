@@ -75,6 +75,24 @@ class Design_10_10_PositionLimiter extends ActorScript
 	override public function init()
 	{
 		
+		/* ======================== When Updating ========================= */
+		addWhenUpdatedListener(null, function(elapsedTime:Float, list:Array<Dynamic>):Void
+		{
+			if(wrapper.enabled)
+			{
+				/* Don't go off the left side. */
+				if((actor.getX() < 1))
+				{
+					actor.setX(2);
+				}
+				/* Don't go off the right side. */
+				if(((actor.getX() + (actor.getWidth())) > (getSceneWidth() - 1)))
+				{
+					actor.setX(((getSceneWidth() - 2) - (actor.getWidth())));
+				}
+			}
+		});
+		
 	}
 	
 	override public function forwardMessage(msg:String)

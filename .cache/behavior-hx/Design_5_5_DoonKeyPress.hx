@@ -80,6 +80,18 @@ class Design_5_5_DoonKeyPress extends ActorScript
 	override public function init()
 	{
 		
+		/* ======================== When Updating ========================= */
+		addWhenUpdatedListener(null, function(elapsedTime:Float, list:Array<Dynamic>):Void
+		{
+			if(wrapper.enabled)
+			{
+				if(isKeyPressed(key))
+				{
+					actor.shout("_customEvent_" + action);
+				}
+			}
+		});
+		
 	}
 	
 	override public function forwardMessage(msg:String)

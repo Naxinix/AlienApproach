@@ -36,7 +36,7 @@
                                         <get-val-14-21 comment="false" id="0" x="0" y="0"/>
                                         <keystate comment="false" id="1" x="0" y="0">
                                             <int id="0" val="0"/>
-                                            <CONTROL eid="var" id="1" vid="13"/>
+                                            <control eid="var" id="1" vid="13"/>
                                         </keystate>
                                     </or>
                                 </set-val-14-21>
@@ -83,7 +83,7 @@
                                                     </eq>
                                                 </if>
                                             </group>
-                                            <ACTORTYPE eid="var" id="0" vid="4"/>
+                                            <actortype eid="var" id="0" vid="4"/>
                                         </actors-of-type3>
                                     </group>
                                     <get-val-14-18 comment="false" id="0" x="0" y="0"/>
@@ -113,7 +113,7 @@
                                             <ACTOR eid="this" id="2"/>
                                         </dolater>
                                         <create-actor3 comment="false" x="59" y="702">
-                                            <ACTORTYPE eid="var" id="0" vid="4"/>
+                                            <actortype eid="var" id="0" vid="4"/>
                                             <int id="1" val="0"/>
                                             <int id="2" val="0"/>
                                             <int id="3" val="0"/>
@@ -285,6 +285,7 @@
                                                             <int id="0" val="1"/>
                                                             <get-val-14-15 comment="false" id="1" x="0" y="0"/>
                                                         </to-degreesradians>
+                                                        <int id="2" val="1"/>
                                                     </trig-master>
                                                 </times>
                                             </plus>
@@ -311,6 +312,7 @@
                                                             <int id="0" val="1"/>
                                                             <get-val-14-15 comment="false" id="1" x="0" y="0"/>
                                                         </to-degreesradians>
+                                                        <int id="2" val="1"/>
                                                     </trig-master>
                                                 </times>
                                             </plus>

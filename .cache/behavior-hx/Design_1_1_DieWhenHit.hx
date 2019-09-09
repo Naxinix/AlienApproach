@@ -75,6 +75,18 @@ class Design_1_1_DieWhenHit extends ActorScript
 	override public function init()
 	{
 		
+		/* ======================== Something Else ======================== */
+		addCollisionListener(actor, function(event:Collision, list:Array<Dynamic>):Void
+		{
+			if(wrapper.enabled)
+			{
+				/* See 'Explode on Death' behavior to see the logic for HandleDeath. */
+				actor.shout("_customEvent_" + "HandleDeath");
+				recycleActor(actor.getLastCollidedActor());
+				recycleActor(actor);
+			}
+		});
+		
 	}
 	
 	override public function forwardMessage(msg:String)

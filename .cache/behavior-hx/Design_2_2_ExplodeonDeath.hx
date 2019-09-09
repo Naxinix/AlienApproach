@@ -70,6 +70,20 @@ class Design_2_2_ExplodeonDeath extends ActorScript
 	public var _SecondActortoCreate:ActorType;
 	public var _ExplosionForceofSecondActors:Float;
 	public var _SoundtoPlay:Sound;
+	public function _customEvent_HandleDeath():Void
+	{
+		playSound(_SoundtoPlay);
+		for(index0 in 0...Std.int(_NumberofActorstoCreate))
+		{
+			createRecycledActor(getActorType(11), (actor.getX() + (actor.getWidth()/2)), (actor.getY() + (actor.getHeight()/2)), Script.FRONT);
+			getLastCreatedActor().applyImpulseInDirection(randomInt(1, 360), _ExplosionForce);
+		}
+		for(index0 in 0...Std.int(_NumberofSecondActorstoCreate))
+		{
+			createRecycledActor(getActorType(13), (actor.getX() + (actor.getWidth()/2)), (actor.getY() + (actor.getHeight()/2)), Script.FRONT);
+			getLastCreatedActor().applyImpulseInDirection(randomInt(1, 360), _ExplosionForceofSecondActors);
+		}
+	}
 	
 	
 	public function new(dummy:Int, actor:Actor, dummy2:Engine)

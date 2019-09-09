@@ -61,7 +61,7 @@ import com.stencyl.graphics.shaders.BloomShader;
 
 
 
-class ActorEvents_9 extends ActorScript
+class ActorEvents_5 extends ActorScript
 {
 	
 	
@@ -73,15 +73,6 @@ class ActorEvents_9 extends ActorScript
 	
 	override public function init()
 	{
-		
-		/* ========================= Type & Type ========================== */
-		addSceneCollisionListener(getActorType(9).ID, getActorType(5).ID, function(event:Collision, list:Array<Dynamic>):Void
-		{
-			if(wrapper.enabled)
-			{
-				trace("hit!!!");
-			}
-		});
 		
 	}
 	
