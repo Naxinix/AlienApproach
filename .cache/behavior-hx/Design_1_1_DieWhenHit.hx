@@ -71,7 +71,7 @@ class Design_1_1_DieWhenHit extends ActorScript
 		super(actor);
 		nameMap.set("Actor", "actor");
 		nameMap.set("hits", "_hits");
-		_hits = 0;
+		_hits = 0.0;
 		
 	}
 	

@@ -14,12 +14,4 @@
         </event-key-any-press-release>
     </group>
     <group eventID="1" id="-1"/>
-    <group eventID="2" id="0">
-        <event-collide-typetotype comment="false" x="15" y="15">
-            <group eventID="2" id="-1"/>
-            <actortype eid="9" id="0"/>
-            <actortype eid="5" id="1"/>
-        </event-collide-typetotype>
-    </group>
-    <group eventID="2" id="-1"/>
 </groups>

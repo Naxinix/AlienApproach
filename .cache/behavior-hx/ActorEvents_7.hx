@@ -72,7 +72,7 @@ class ActorEvents_7 extends ActorScript
 	{
 		super(actor);
 		nameMap.set("HitCount", "_HitCount");
-		_HitCount = 0;
+		_HitCount = 0.0;
 		nameMap.set("Bullet", "_Bullet");
 		nameMap.set("instance", "_instance");
 		
@@ -101,6 +101,8 @@ class ActorEvents_7 extends ActorScript
 			{
 				if((_HitCount == 3))
 				{
+					actor.shout("_customEvent_" + "HandleDeath");
+					recycleActor(actor.getLastCollidedActor());
 					recycleActor(actor);
 				}
 			}

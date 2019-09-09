@@ -11,7 +11,7 @@
     </snippet>
     <snippet attachedevent="false" class="scripts.Design_1_1_DieWhenHit" classname="scripts.Design_1_1_DieWhenHit" desc="When hit, kill the collided actor and kill self." description="When hit, kill the collided actor and kill self." design="true" drawOrder="0" id="1" name="Die and Kill When Hit" oid="-1" package="" shared="false" type="actor">
         <actor default="thisactor" defaultValue="thisactor" desc="" dropdown="" fullname="Actor" hidden="true" id="2147483647" name="actor" order="0"/>
-        <number default="0" defaultValue="0" desc="" dropdown="" fullname="hits" hidden="true" id="1" name="_hits" order="1"/>
+        <number default="0.0" defaultValue="0.0" desc="" dropdown="" fullname="hits" hidden="true" id="1" name="_hits" order="1"/>
         <blocks/>
         <events>
             <event displayName="Actor - Any" enabled="true" id="1" name="collide" order="1" repeats="true"/>
@@ -101,13 +101,16 @@
         <blocks/>
         <events>
             <event displayName="Any Key" enabled="true" id="1" name="event-key-any-press-release" order="1" repeats="true"/>
-            <event displayName="Type - Type" enabled="true" id="2" name="event-collide-typetotype" order="2" repeats="true"/>
         </events>
     </snippet>
     <snippet actorid="1" attachedevent="true" class="scripts.ActorEvents_1" classname="scripts.ActorEvents_1" desc="Actor Specific Events" description="Actor Specific Events" design="true" drawOrder="0" id="13" name="ActorEvents_1" oid="-1" package="scripts." shared="false" type="actor">
+        <boolean default="false" defaultValue="false" desc="" dropdown="" fullname="isAlive" hidden="false" id="1" name="_isAlive" order="0"/>
         <blocks/>
         <events>
             <event displayName="Keyboard" enabled="true" id="1" name="event-key-press-release" order="1" repeats="true"/>
+            <event displayName="Updating" enabled="true" id="4" name="step" order="3" repeats="true"/>
+            <event displayName="Created" enabled="true" id="5" name="init" order="2" repeats="true"/>
+            <event displayName="Type - Type" enabled="true" id="6" name="event-collide-typetotype" order="4" repeats="true"/>
         </events>
     </snippet>
     <snippet attachedevent="false" class="scripts.Design_14_14_FireBullet" classname="scripts.Design_14_14_FireBullet" desc="Spawn bullets from the actor's position." description="Spawn bullets from the actor's position." design="true" drawOrder="0" id="14" name="Fire Bullet" oid="-1" package="scripts" shared="false" type="actor">
@@ -180,5 +183,18 @@
         <events>
             <event displayName="Collision" enabled="true" id="1" name="collide" order="1" repeats="true"/>
         </events>
+    </snippet>
+    <snippet actorid="3" attachedevent="true" class="scripts.ActorEvents_3" classname="scripts.ActorEvents_3" desc="Actor Specific Events" description="Actor Specific Events" design="true" drawOrder="0" id="21" name="ActorEvents_3" oid="-1" package="scripts." shared="false" type="actor">
+        <number default="0.0" defaultValue="0.0" desc="" dropdown="" fullname="HitCount" hidden="false" id="1" name="_HitCount" order="0"/>
+        <blocks/>
+        <events>
+            <event displayName="Actor - Any" enabled="true" id="1" name="collide" order="1" repeats="true"/>
+            <event displayName="Updating" enabled="true" id="2" name="step" order="2" repeats="true"/>
+            <event displayName="Created" enabled="true" id="3" name="init" order="3" repeats="true"/>
+        </events>
+    </snippet>
+    <snippet attachedevent="true" class="scripts.SceneEvents_3" classname="scripts.SceneEvents_3" desc="Scene Specific Events" description="Scene Specific Events" design="true" drawOrder="0" id="22" name="SceneEvents_3" oid="-1" package="scripts." sceneid="3" shared="false" type="scene">
+        <blocks/>
+        <events/>
     </snippet>
 </pack>
