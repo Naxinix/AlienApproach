@@ -64,11 +64,14 @@ import com.stencyl.graphics.shaders.BloomShader;
 
 class SceneEvents_1 extends SceneScript
 {
+	public var _counter:Float;
 	
 	
 	public function new(dummy:Int, dummy2:Engine)
 	{
 		super();
+		nameMap.set("counter", "_counter");
+		_counter = 0.0;
 		
 	}
 	
@@ -82,6 +85,27 @@ class SceneEvents_1 extends SceneScript
 			{
 				trace(charFromCharCode(event.charCode));
 				trace(event.keyCode);
+			}
+		});
+		
+		/* ======================== When Updating ========================= */
+		addWhenUpdatedListener(null, function(elapsedTime:Float, list:Array<Dynamic>):Void
+		{
+			if(wrapper.enabled)
+			{
+				if((_counter == 5))
+				{
+					switchScene(GameModel.get().scenes.get(4).getID(), null, createCrossfadeTransition(1));
+				}
+			}
+		});
+		
+		/* ======================= Member of Group ======================== */
+		addWhenTypeGroupKilledListener(getActorGroup(4), function(eventActor:Actor, list:Array<Dynamic>):Void
+		{
+			if(wrapper.enabled)
+			{
+				_counter += 1;
 			}
 		});
 		

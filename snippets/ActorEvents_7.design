@@ -34,12 +34,7 @@
             </group>
         </step>
     </group>
-    <group eventID="1" id="1">
-        <comment-long comment="false" x="508" y="284">
-            <int id="0" val="See &amp;apos;Explode on Death&amp;apos; behavior to see the logic for HandleDeath."/>
-        </comment-long>
-    </group>
-    <group eventID="4" id="3">
+    <group eventID="4" id="1">
         <die comment="false" x="260" y="416">
             <ACTOR eid="this" id="0"/>
         </die>

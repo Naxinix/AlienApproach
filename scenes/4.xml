@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<scene depth="1" desc="" eventsnippetid="23" extheight="544" extwidth="704" extx="-32" exty="-32" format="4.0.1" gravx="-0.0" gravy="0.0" height="480" id="4" name="Victory" revision="" savecount="0" tiled="1" tileh="32" tilew="32" type="standard" width="640">
+    <layers>
+        <color-bg blue="0" green="0" red="0"/>
+        <layer blendMode="normal" color="100,168,234" id="0" locked="false" name="Layer 0" opacity="100" order="0" scrollFactorX="1.0" scrollFactorY="1.0" visible="true"/>
+    </layers>
+    <joints/>
+    <regions/>
+    <terrainRegions/>
+    <actors>
+        <actor a="0.0" aid="1" c="false" group="3" id="21" name="QuitButton 1" order="0" sx="0.288" sy="0.44761905" x="247" y="267" z="0"/>
+    </actors>
+    <snippets/>
+    <terrain>
+        <p pts="18,96.0,32.0,128.0,32.0,128.0,0.0,192.0,0.0,192.0,32.0,160.0,32.0,160.0,64.0,128.0,64.0,128.0,96.0,96.0,96.0,96.0,128.0,64.0,128.0,64.0,160.0,32.0,160.0,32.0,96.0,0.0,96.0,0.0,64.0,96.0,64.0" x="96.0" y="256.0"/>
+        <p pts="6,64.0,0.0,64.0,32.0,32.0,32.0,32.0,64.0,0.0,64.0,0.0,0.0" x="288.0" y="192.0"/>
+        <p pts="4,0.0,0.0,32.0,0.0,32.0,32.0,0.0,32.0" x="384.0" y="128.0"/>
+        <p pts="8,32.0,0.0,96.0,0.0,96.0,32.0,64.0,32.0,64.0,64.0,0.0,64.0,0.0,32.0,32.0,32.0" x="416.0" y="64.0"/>
+        <p pts="4,32.0,32.0,0.0,32.0,0.0,0.0,32.0,0.0" x="352.0" y="160.0"/>
+    </terrain>
+    <atlases members="" retainAtlases="true"/>
+</scene>
