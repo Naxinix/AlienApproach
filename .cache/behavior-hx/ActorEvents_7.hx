@@ -89,8 +89,13 @@ class ActorEvents_7 extends ActorScript
 		{
 			if(wrapper.enabled)
 			{
+				actor.setFilter([createTintFilter(Utils.getColorRGB(255,51,51), 50/100)]);
 				_HitCount = (_HitCount + 1);
 				recycleActor(actor.getLastCollidedActor());
+				runLater(1000 * 0.25, function(timeTask:TimedTask):Void
+				{
+					actor.clearFilters();
+				}, actor);
 			}
 		});
 		

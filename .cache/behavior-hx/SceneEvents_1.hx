@@ -65,6 +65,8 @@ import com.stencyl.graphics.shaders.BloomShader;
 class SceneEvents_1 extends SceneScript
 {
 	public var _counter:Float;
+	public var _lives:Float;
+	public var _HitCount:Float;
 	
 	
 	public function new(dummy:Int, dummy2:Engine)
@@ -72,6 +74,10 @@ class SceneEvents_1 extends SceneScript
 		super();
 		nameMap.set("counter", "_counter");
 		_counter = 0.0;
+		nameMap.set("lives", "_lives");
+		_lives = 0.0;
+		nameMap.set("HitCount", "_HitCount");
+		_HitCount = 0.0;
 		
 	}
 	
@@ -93,7 +99,11 @@ class SceneEvents_1 extends SceneScript
 		{
 			if(wrapper.enabled)
 			{
-				if((_counter == 10))
+				if((_lives == 0))
+				{
+					switchScene(GameModel.get().scenes.get(3).getID(), null, createCrossfadeTransition(1));
+				}
+				if((_counter == 28))
 				{
 					switchScene(GameModel.get().scenes.get(4).getID(), null, createCrossfadeTransition(1));
 				}
@@ -106,6 +116,29 @@ class SceneEvents_1 extends SceneScript
 			if(wrapper.enabled)
 			{
 				_counter += 1;
+			}
+		});
+		
+		/* ======================== Specific Actor ======================== */
+		addWhenCreatedListener(getActor(1), function(list:Array<Dynamic>):Void
+		{
+			if(wrapper.enabled)
+			{
+				_lives = 5;
+			}
+		});
+		
+		/* ========================= Type & Type ========================== */
+		addSceneCollisionListener(getActorType(38).ID, getActorType(1).ID, function(event:Collision, list:Array<Dynamic>):Void
+		{
+			if(wrapper.enabled)
+			{
+				_lives = (_lives - 1);
+				getActor(1).setFilter([createTintFilter(Utils.getColorRGB(255,51,51), 50/100)]);
+				runLater(1000 * 0.25, function(timeTask:TimedTask):Void
+				{
+					getLastCreatedActor().clearFilters();
+				}, null);
 			}
 		});
 		

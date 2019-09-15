@@ -95,6 +95,17 @@ class ActorEvents_5 extends ActorScript
 			}
 		}, actor);
 		
+		/* ======================== Actor of Type ========================= */
+		addCollisionListener(actor, function(event:Collision, list:Array<Dynamic>):Void
+		{
+			if(wrapper.enabled && sameAsAny(getActorType(9), event.otherActor.getType(),event.otherActor.getGroup()))
+			{
+				actor.shout("_customEvent_" + "HandleDeath");
+				recycleActor(actor.getLastCollidedActor());
+				recycleActor(actor);
+			}
+		});
+		
 	}
 	
 	override public function forwardMessage(msg:String)

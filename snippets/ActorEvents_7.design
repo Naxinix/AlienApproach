@@ -34,24 +34,35 @@
             </group>
         </step>
     </group>
-    <group eventID="4" id="1">
-        <die comment="false" x="260" y="416">
-            <ACTOR eid="this" id="0"/>
-        </die>
-    </group>
     <group eventID="4" id="-1"/>
     <group eventID="5" id="0">
         <collide comment="false" x="15" y="15">
             <group eventID="5" id="-1">
-                <set-val-19-1 comment="false" x="26" y="45">
+                <apply-filter comment="false" x="26" y="45">
+                    <ACTOR eid="this" id="0"/>
+                    <filter-tint comment="false" id="1" x="0" y="0">
+                        <color b="51" g="51" id="0" r="255"/>
+                        <int id="1" val="50"/>
+                    </filter-tint>
+                </apply-filter>
+                <set-val-19-1 comment="false" x="26" y="85">
                     <plus comment="false" id="0" x="0" y="0">
                         <get-val-19-1 comment="false" id="0" x="0" y="0"/>
                         <int id="1" val="1"/>
                     </plus>
                 </set-val-19-1>
-                <die comment="false" x="26" y="75">
+                <die comment="false" x="26" y="115">
                     <ACTOR eid="lastcollided" id="0"/>
                 </die>
+                <dolater comment="false" x="26" y="142">
+                    <group eventID="5" id="-1">
+                        <clear-filter comment="false" x="37" y="169">
+                            <ACTOR eid="this" id="0"/>
+                        </clear-filter>
+                    </group>
+                    <int id="0" val="0.25"/>
+                    <ACTOR eid="this" id="2"/>
+                </dolater>
             </group>
         </collide>
     </group>

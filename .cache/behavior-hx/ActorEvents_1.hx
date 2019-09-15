@@ -64,6 +64,8 @@ import com.stencyl.graphics.shaders.BloomShader;
 class ActorEvents_1 extends ActorScript
 {
 	public var _isAlive:Bool;
+	public var _lives:Float;
+	public var _HitCount:Float;
 	
 	
 	public function new(dummy:Int, actor:Actor, dummy2:Engine)
@@ -71,6 +73,10 @@ class ActorEvents_1 extends ActorScript
 		super(actor);
 		nameMap.set("isAlive", "_isAlive");
 		_isAlive = false;
+		nameMap.set("lives", "_lives");
+		_lives = 0.0;
+		nameMap.set("HitCount", "_HitCount");
+		_HitCount = 0.0;
 		
 	}
 	

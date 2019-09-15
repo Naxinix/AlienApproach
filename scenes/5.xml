@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<scene depth="1" desc="" eventsnippetid="26" extheight="544" extwidth="704" extx="-32" exty="-32" format="4.0.1" gravx="-0.0" gravy="0.0" height="480" id="5" name="Select_Mode" revision="" savecount="0" tiled="1" tileh="32" tilew="32" type="standard" width="640">
+    <layers>
+        <color-bg blue="255" green="255" red="255"/>
+        <background blendMode="normal" customScrollFactor="false" id="1" locked="true" name="Vacio" opacity="100" order="1" rid="30" scrollFactorX="1.0" scrollFactorY="1.0" visible="true"/>
+        <layer blendMode="normal" color="100,168,234" id="0" locked="false" name="Layer 0" opacity="100" order="0" scrollFactorX="1.0" scrollFactorY="1.0" visible="true"/>
+    </layers>
+    <joints/>
+    <regions/>
+    <terrainRegions/>
+    <actors>
+        <actor a="0.0" aid="1" c="false" group="3" id="32" name="EasyButton 1" order="0" sx="0.6223176" sy="0.6223176" x="90" y="29" z="0"/>
+        <actor a="0.0" aid="2" c="false" group="3" id="34" name="NormalButton 2" order="1" sx="0.6180258" sy="0.6180258" x="91" y="149" z="0"/>
+        <actor a="0.0" aid="3" c="false" group="3" id="36" name="HardButton 3" order="2" sx="0.6137339" sy="0.6137339" x="90" y="266" z="0"/>
+    </actors>
+    <snippets/>
+    <terrain/>
+    <atlases members="" retainAtlases="true"/>
+</scene>

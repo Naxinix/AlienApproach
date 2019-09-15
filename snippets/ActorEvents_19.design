@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <groups>
     <group eventID="1" id="0">
-        <event-mouse-enter-exit-actor comment="false" x="27" y="70">
+        <event-mouse-enter-exit-actor comment="false" x="28" y="25">
             <group eventID="1" id="-1">
-                <scene-change-through comment="false" x="38" y="97">
-                    <scene eid="1" id="0"/>
+                <scene-change-through comment="false" x="39" y="52">
+                    <scene eid="5" id="0"/>
                     <int id="1" val="0"/>
                     <int id="2" val="2"/>
                 </scene-change-through>

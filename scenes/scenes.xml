@@ -4,4 +4,5 @@
     <scene desc="" format="4.0.1" id="2" name="Menu"/>
     <scene desc="" format="4.0.1" id="3" name="Defeat"/>
     <scene desc="" format="4.0.1" id="4" name="Victory"/>
+    <scene desc="" format="4.0.1" id="5" name="Select_Mode"/>
 </scenes>

@@ -80,13 +80,18 @@ class ActorEvents_3 extends ActorScript
 		/* ======================== When Creating ========================= */
 		_HitCount = 0;
 		
-		/* ======================== Something Else ======================== */
+		/* ======================== Actor of Type ========================= */
 		addCollisionListener(actor, function(event:Collision, list:Array<Dynamic>):Void
 		{
-			if(wrapper.enabled)
+			if(wrapper.enabled && sameAsAny(getActorType(9), event.otherActor.getType(),event.otherActor.getGroup()))
 			{
+				actor.setFilter([createTintFilter(Utils.getColorRGB(255,51,51), 50/100)]);
 				_HitCount = (_HitCount + 1);
 				recycleActor(actor.getLastCollidedActor());
+				runLater(1000 * 0.25, function(timeTask:TimedTask):Void
+				{
+					actor.clearFilters();
+				}, actor);
 			}
 		});
 		
