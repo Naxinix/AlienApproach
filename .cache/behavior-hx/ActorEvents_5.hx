@@ -63,16 +63,37 @@ import com.stencyl.graphics.shaders.BloomShader;
 
 class ActorEvents_5 extends ActorScript
 {
+	public var _Fire:Bool;
+	
+	/* ========================= Custom Event ========================= */
+	public function _customEvent_FireBullet():Void
+	{
+		_Fire = true;
+	}
 	
 	
 	public function new(dummy:Int, actor:Actor, dummy2:Engine)
 	{
 		super(actor);
+		nameMap.set("Fire", "_Fire");
+		_Fire = false;
 		
 	}
 	
 	override public function init()
 	{
+		
+		/* ======================= Every N seconds ======================== */
+		runPeriodically(1000 * 2, function(timeTask:TimedTask):Void
+		{
+			if(wrapper.enabled)
+			{
+				if((randomFloat() > 0.5))
+				{
+					actor.say("Fire Bullet", "_customEvent_" + "FireBullet");
+				}
+			}
+		}, actor);
 		
 	}
 	

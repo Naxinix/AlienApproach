@@ -93,7 +93,7 @@ class SceneEvents_1 extends SceneScript
 		{
 			if(wrapper.enabled)
 			{
-				if((_counter == 5))
+				if((_counter == 10))
 				{
 					switchScene(GameModel.get().scenes.get(4).getID(), null, createCrossfadeTransition(1));
 				}
