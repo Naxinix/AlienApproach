@@ -20,19 +20,6 @@
                 <if comment="false" x="26" y="40">
                     <group eventID="2" id="-1">
                         <scene-change-through comment="false" x="37" y="70">
-                            <scene eid="3" id="0"/>
-                            <int id="1" val="0"/>
-                            <int id="2" val="1"/>
-                        </scene-change-through>
-                    </group>
-                    <eq comment="false" id="0" x="0" y="0">
-                        <get-val-12-2 comment="false" id="0" x="0" y="0"/>
-                        <int id="1" val="0"/>
-                    </eq>
-                </if>
-                <if comment="false" x="26" y="109">
-                    <group eventID="2" id="-1">
-                        <scene-change-through comment="false" x="37" y="139">
                             <scene eid="4" id="0"/>
                             <int id="1" val="0"/>
                             <int id="2" val="1"/>
@@ -40,11 +27,26 @@
                     </group>
                     <eq comment="false" id="0" x="0" y="0">
                         <get-val-12-1 comment="false" id="0" x="0" y="0"/>
-                        <int id="1" val="28"/>
+                        <int id="1" val="27"/>
                     </eq>
                 </if>
             </group>
         </step>
+    </group>
+    <group eventID="2" id="1">
+        <if comment="false" x="307" y="313">
+            <group eventID="2" id="-1">
+                <scene-change-through comment="false" x="318" y="343">
+                    <scene eid="3" id="0"/>
+                    <int id="1" val="0"/>
+                    <int id="2" val="1"/>
+                </scene-change-through>
+            </group>
+            <eq comment="false" id="0" x="0" y="0">
+                <get-val-12-2 comment="false" id="0" x="0" y="0"/>
+                <int id="1" val="0"/>
+            </eq>
+        </if>
     </group>
     <group eventID="2" id="-1"/>
     <group eventID="3" id="0">
@@ -61,47 +63,14 @@
         </event-group-create-kill>
     </group>
     <group eventID="3" id="-1"/>
-    <group eventID="4" id="0">
-        <event-actor-create-kill comment="false" x="15" y="15">
-            <group eventID="4" id="-1">
-                <set-val-12-2 comment="false" x="26" y="42">
-                    <int id="0" val="5"/>
-                </set-val-12-2>
+    <group eventID="6" id="0">
+        <init comment="false" x="15" y="15">
+            <group eventID="6" id="-1">
+                <set-val-12-1 comment="false" x="26" y="40">
+                    <int id="0" val="0"/>
+                </set-val-12-1>
             </group>
-            <int id="0" val="0"/>
-            <ACTOR eid="1" id="1"/>
-        </event-actor-create-kill>
+        </init>
     </group>
-    <group eventID="4" id="-1"/>
-    <group eventID="5" id="0">
-        <event-collide-typetotype comment="false" x="15" y="15">
-            <group eventID="5" id="-1">
-                <set-val-12-2 comment="false" x="26" y="47">
-                    <minus comment="false" id="0" x="0" y="0">
-                        <get-val-12-2 comment="false" id="0" x="0" y="0"/>
-                        <int id="1" val="1"/>
-                    </minus>
-                </set-val-12-2>
-                <apply-filter comment="false" x="26" y="77">
-                    <ACTOR eid="1" id="0"/>
-                    <filter-tint comment="false" id="1" x="0" y="0">
-                        <color b="51" g="51" id="0" r="255"/>
-                        <int id="1" val="50"/>
-                    </filter-tint>
-                </apply-filter>
-                <dolater comment="false" x="26" y="117">
-                    <group eventID="5" id="-1">
-                        <clear-filter comment="false" x="37" y="144">
-                            <ACTOR eid="lastcreated" id="0"/>
-                        </clear-filter>
-                    </group>
-                    <int id="0" val="0.25"/>
-                    <ACTOR eid="lastcreated" id="2"/>
-                </dolater>
-            </group>
-            <actortype eid="38" id="0"/>
-            <actortype eid="1" id="1"/>
-        </event-collide-typetotype>
-    </group>
-    <group eventID="5" id="-1"/>
+    <group eventID="6" id="-1"/>
 </groups>

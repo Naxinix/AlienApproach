@@ -74,6 +74,15 @@ class ActorEvents_32 extends ActorScript
 	override public function init()
 	{
 		
+		/* =========================== On Actor =========================== */
+		addMouseOverActorListener(actor, function(mouseState:Int, list:Array<Dynamic>):Void
+		{
+			if(wrapper.enabled && 3 == mouseState)
+			{
+				switchScene(GameModel.get().scenes.get(6).getID(), null, createCrossfadeTransition(0));
+			}
+		});
+		
 	}
 	
 	override public function forwardMessage(msg:String)

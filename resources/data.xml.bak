@@ -53,7 +53,7 @@
                 <prop id="32" list="0" val="Absolute"/>
                 <prop id="2147483647" list="0" val="thisactor"/>
                 <prop id="2" list="0" val="20"/>
-                <prop id="4" list="0" val="9"/>
+                <prop id="4" list="0" val="42"/>
                 <prop id="5" list="0" val="90"/>
                 <prop id="9" list="0" val="0.0"/>
                 <prop id="13" list="0" val="No Control"/>
@@ -123,12 +123,16 @@
             <poly data="4,0,0,466,0,466,128,0,128" density="0.1" fric="0.2" gid="-1000" id="0" name="Animation 0" rest="0.0" sensor="false"/>
         </anim>
     </sprite>
-    <actor adamp="0.0" ascale="true" atlasID="0" bodytype="2" continuous="true" desc="" eventsnippetid="30" fixedrot="false" fric="0.2" gid="3" id="38" ignoreg="false" inertia="1.0" ldamp="0.0" mass="1.0" name="EnemyBullet" oid="-1" pausable="true" physicsMode="0" rest="0.0" shared="false" sprite="39" static="false">
-        <snippets/>
+    <actor adamp="0.0" ascale="false" atlasID="0" bodytype="2" continuous="false" desc="" eventsnippetid="31" fixedrot="true" fric="0.2" gid="5" id="40" ignoreg="true" inertia="0.01" ldamp="0.0" mass="0.1" name="EnemyBullet2" oid="-1" pausable="true" physicsMode="0" rest="0.0" shared="false" sprite="41" static="false">
+        <snippets>
+            <s enabled="true" id="8">
+                <prop id="2147483647" list="0" val="thisactor"/>
+            </s>
+        </snippets>
     </actor>
-    <sprite atlasID="0" default="0" defaultAnimation="0" desc="" id="39" name="EnemyBullet" readable="false" shared="false">
-        <anim across="1" down="1" durations="100" height="92" id="0" loop="true" name="Animation 0" numframes="1" originx="34" originy="46" sync="false" version="2" width="68">
-            <poly data="4,0,0,68,0,68,92,0,92" density="0.1" fric="0.2" gid="-1000" id="0" name="Animation 0" rest="0.0" sensor="false"/>
+    <sprite atlasID="0" default="0" defaultAnimation="0" desc="" id="41" name="EnemyBullet2" readable="false" shared="false">
+        <anim across="1" down="1" durations="70" height="23" id="0" loop="true" name="Animation 0" numframes="1" originx="8" originy="11" sync="false" version="2" width="17">
+            <poly data="4,0,0,17,0,17,23,0,23" density="0.1" fric="0.2" gid="-1000" id="0" name="Animation 0" rest="0.0" sensor="true"/>
         </anim>
     </sprite>
     <music atlasID="0" desc="" id="15" loop="true" name="Explode" oid="-1" pan="0" shared="false" stream="false" type="mp3" volume="1"/>
@@ -194,6 +198,18 @@
         </snippets>
     </actor>
     <sprite atlasID="0" default="0" defaultAnimation="0" desc="" id="10" name="Player Projectile" readable="false" shared="false">
+        <anim across="2" down="1" durations="70,70" height="23" id="0" loop="true" name="Animation 0" numframes="2" originx="8" originy="11" sync="false" version="1" width="34">
+            <poly data="4,0,0,17,0,17,23,0,23" density="0.1" fric="0.2" gid="-1000" id="0" name="Animation 0" rest="0.0" sensor="true"/>
+        </anim>
+    </sprite>
+    <actor adamp="0.0" ascale="false" atlasID="0" bodytype="2" continuous="false" desc="" eventsnippetid="32" fixedrot="true" fric="0.2" gid="5" id="42" ignoreg="true" inertia="0.01" ldamp="0.0" mass="0.1" name="Player Projectile Copy" oid="-1" pausable="true" physicsMode="0" rest="0.0" shared="false" sprite="43" static="false">
+        <snippets>
+            <s enabled="true" id="8">
+                <prop id="2147483647" list="0" val="thisactor"/>
+            </s>
+        </snippets>
+    </actor>
+    <sprite atlasID="0" default="0" defaultAnimation="0" desc="" id="43" name="Player Projectile Copy" readable="false" shared="false">
         <anim across="2" down="1" durations="70,70" height="23" id="0" loop="true" name="Animation 0" numframes="2" originx="8" originy="11" sync="false" version="1" width="34">
             <poly data="4,0,0,17,0,17,23,0,23" density="0.1" fric="0.2" gid="-1000" id="0" name="Animation 0" rest="0.0" sensor="true"/>
         </anim>

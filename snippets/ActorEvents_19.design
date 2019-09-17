@@ -6,7 +6,7 @@
                 <scene-change-through comment="false" x="39" y="52">
                     <scene eid="5" id="0"/>
                     <int id="1" val="0"/>
-                    <int id="2" val="2"/>
+                    <int id="2" val="0"/>
                 </scene-change-through>
             </group>
             <ACTOR eid="this" id="0"/>

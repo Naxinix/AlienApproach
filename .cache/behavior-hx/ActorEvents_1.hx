@@ -84,6 +84,7 @@ class ActorEvents_1 extends ActorScript
 	{
 		
 		/* ======================== When Creating ========================= */
+		_lives = 5;
 		_isAlive = true;
 		
 		/* ======================== When Updating ========================= */
@@ -91,10 +92,25 @@ class ActorEvents_1 extends ActorScript
 		{
 			if(wrapper.enabled)
 			{
-				if((_isAlive == false))
+				if((_lives < 1))
 				{
 					switchScene(GameModel.get().scenes.get(3).getID(), null, createCrossfadeTransition(1));
 				}
+			}
+		});
+		
+		/* ========================= Type & Type ========================== */
+		addSceneCollisionListener(getActorType(1).ID, getActorType(42).ID, function(event:Collision, list:Array<Dynamic>):Void
+		{
+			if(wrapper.enabled)
+			{
+				recycleActor(actor.getLastCollidedActor());
+				actor.setFilter([createTintFilter(Utils.getColorRGB(255,51,51), 50/100)]);
+				_lives -= 1;
+				runLater(1000 * 0.25, function(timeTask:TimedTask):Void
+				{
+					actor.clearFilters();
+				}, actor);
 			}
 		});
 		
