@@ -38,12 +38,9 @@
         <actor a="0.0" aid="30" c="false" group="4" id="5" name="Alien Grabber 30" order="23" sx="1.0" sy="1.0" x="448" y="160" z="0"/>
         <actor a="0.0" aid="31" c="false" group="4" id="5" name="Alien Grabber 31" order="24" sx="1.0" sy="1.0" x="64" y="224" z="0"/>
         <actor a="0.0" aid="32" c="false" group="4" id="5" name="Alien Grabber 32" order="25" sx="1.0" sy="1.0" x="512" y="224" z="0"/>
-        <actor a="0.0" aid="34" c="false" group="3" id="1" name="Player Tank 34" order="26" sx="1.0" sy="1.0" x="219" y="366" z="0"/>
-        <actor a="0.0" aid="35" c="false" group="3" id="13" name="Particle Bigger 35" order="27" sx="1.0" sy="1.0" x="485" y="417" z="0"/>
+        <actor a="0.0" aid="33" c="false" group="3" id="1" name="Player Tank 33" order="26" sx="1.0" sy="1.0" x="298" y="415" z="0"/>
     </actors>
     <snippets/>
-    <terrain>
-        <p pts="4,0.0,32.0,0.0,0.0,640.0,0.0,640.0,32.0" x="0.0" y="448.0"/>
-    </terrain>
+    <terrain/>
     <atlases members="" retainAtlases="true"/>
 </scene>

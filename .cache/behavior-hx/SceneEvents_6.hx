@@ -62,9 +62,10 @@ import com.stencyl.graphics.shaders.BloomShader;
 
 
 
-class SceneEvents_7 extends SceneScript
+class SceneEvents_6 extends SceneScript
 {
 	public var _counter:Float;
+	public var _frameCounter:Float;
 	
 	
 	public function new(dummy:Int, dummy2:Engine)
@@ -72,6 +73,8 @@ class SceneEvents_7 extends SceneScript
 		super();
 		nameMap.set("counter", "_counter");
 		_counter = 0.0;
+		nameMap.set("frameCounter", "_frameCounter");
+		_frameCounter = 0.0;
 		
 	}
 	
@@ -80,16 +83,27 @@ class SceneEvents_7 extends SceneScript
 		
 		/* ======================== When Creating ========================= */
 		_counter = 0;
+		_frameCounter = 0;
 		
 		/* ======================== When Updating ========================= */
 		addWhenUpdatedListener(null, function(elapsedTime:Float, list:Array<Dynamic>):Void
 		{
 			if(wrapper.enabled)
 			{
-				if((_counter == 22))
+				if((_counter == 11))
 				{
-					switchScene(GameModel.get().scenes.get(4).getID(), null, createSlideRightTransition(1));
+					switchScene(GameModel.get().scenes.get(4).getID(), null, createCrossfadeTransition(1));
 				}
+			}
+		});
+		
+		/* ========================= Type & Type ========================== */
+		addSceneCollisionListener(getActorType(1).ID, getActorType(42).ID, function(event:Collision, list:Array<Dynamic>):Void
+		{
+			if(wrapper.enabled)
+			{
+				_frameCounter = (_frameCounter + 1);
+				getActor(13).setAnimation("" + _frameCounter);
 			}
 		});
 		

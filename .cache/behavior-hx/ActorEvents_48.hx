@@ -43,7 +43,6 @@ import box2D.common.math.B2Vec2;
 import box2D.dynamics.B2Body;
 import box2D.dynamics.B2Fixture;
 import box2D.dynamics.joints.B2Joint;
-import box2D.collision.shapes.B2Shape;
 
 import com.stencyl.graphics.shaders.BasicShader;
 import com.stencyl.graphics.shaders.GrayscaleShader;
@@ -62,43 +61,25 @@ import com.stencyl.graphics.shaders.BloomShader;
 
 
 
-class SceneEvents_7 extends SceneScript
+class ActorEvents_48 extends ActorScript
 {
-	public var _counter:Float;
 	
 	
-	public function new(dummy:Int, dummy2:Engine)
+	public function new(dummy:Int, actor:Actor, dummy2:Engine)
 	{
-		super();
-		nameMap.set("counter", "_counter");
-		_counter = 0.0;
+		super(actor);
 		
 	}
 	
 	override public function init()
 	{
 		
-		/* ======================== When Creating ========================= */
-		_counter = 0;
-		
-		/* ======================== When Updating ========================= */
-		addWhenUpdatedListener(null, function(elapsedTime:Float, list:Array<Dynamic>):Void
+		/* =========================== On Actor =========================== */
+		addMouseOverActorListener(actor, function(mouseState:Int, list:Array<Dynamic>):Void
 		{
-			if(wrapper.enabled)
+			if(wrapper.enabled && 3 == mouseState)
 			{
-				if((_counter == 22))
-				{
-					switchScene(GameModel.get().scenes.get(4).getID(), null, createSlideRightTransition(1));
-				}
-			}
-		});
-		
-		/* ======================= Member of Group ======================== */
-		addWhenTypeGroupKilledListener(getActorGroup(4), function(eventActor:Actor, list:Array<Dynamic>):Void
-		{
-			if(wrapper.enabled)
-			{
-				_counter += 1;
+				switchScene(GameModel.get().scenes.get(2).getID(), null, createSlideRightTransition(0.5));
 			}
 		});
 		

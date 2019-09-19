@@ -10,10 +10,11 @@
     <terrainRegions/>
     <actors>
         <actor a="0.0" aid="1" c="false" group="3" id="19" name="StartButton 1" order="0" sx="0.41538462" sy="0.41538462" x="1158" y="-81" z="0"/>
-        <actor a="0.0" aid="2" c="false" group="3" id="21" name="QuitButton 2" order="1" sx="0.28" sy="0.28" x="77" y="307" z="0"/>
+        <actor a="0.0" aid="2" c="false" group="3" id="21" name="QuitButton 2" order="1" sx="0.28" sy="0.28" x="65" y="303" z="0"/>
         <actor a="0.0" aid="3" c="false" group="3" id="23" name="Logo 3" order="2" sx="0.55263156" sy="0.55263156" x="-26" y="-97" z="0"/>
-        <actor a="341.9806" aid="4" c="false" group="3" id="26" name="Menu_Terry 4" order="3" sx="0.9882353" sy="0.9882353" x="27" y="243" z="0"/>
-        <actor a="0.0" aid="5" c="false" group="3" id="19" name="StartButton 5" order="4" sx="0.527897" sy="0.527897" x="99" y="244" z="0"/>
+        <actor a="341.9806" aid="4" c="false" group="3" id="26" name="Menu_Terry 4" order="3" sx="0.9882353" sy="0.9882353" x="26" y="274" z="0"/>
+        <actor a="0.0" aid="5" c="false" group="3" id="19" name="StartButton 5" order="4" sx="0.527897" sy="0.527897" x="83" y="255" z="0"/>
+        <actor a="0.0" aid="6" c="false" group="3" id="59" name="enemies 6" order="5" sx="0.72" sy="0.72" x="382" y="203" z="0"/>
     </actors>
     <snippets/>
     <terrain/>

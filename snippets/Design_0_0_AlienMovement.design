@@ -161,7 +161,7 @@
             </group>
         </step>
     </group>
-    <group eventID="1" id="2">
+    <group eventID="1" id="1">
         <scene-reload-new comment="false" x="643" y="883">
             <int id="0" val="0"/>
             <int id="1" val="0.3"/>
@@ -170,13 +170,13 @@
         </scene-reload-new>
     </group>
     <group eventID="1" id="-1">
-        <eq comment="false" x="701" y="532">
-            <int id="0" val=""/>
-            <int id="1" val="2"/>
-        </eq>
         <eq comment="false" x="453" y="626">
             <int id="0" val=""/>
             <int id="1" val=""/>
+        </eq>
+        <eq comment="false" x="701" y="532">
+            <int id="0" val=""/>
+            <int id="1" val="2"/>
         </eq>
     </group>
 </groups>

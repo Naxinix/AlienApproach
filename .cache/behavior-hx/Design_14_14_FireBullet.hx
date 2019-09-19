@@ -63,7 +63,6 @@ import com.stencyl.graphics.shaders.BloomShader;
 
 class Design_14_14_FireBullet extends ActorScript
 {
-	public var _DirectionMode:String;
 	public var _BulletSpeed:Float;
 	public var _BulletType:ActorType;
 	public var _Direction:Float;
@@ -85,6 +84,15 @@ class Design_14_14_FireBullet extends ActorScript
 	public var _DownAnimations:String;
 	public var _LeftAnimations:String;
 	public var _RightAnimations:String;
+	public var _DirectionMode:String;
+	public var _CanFire:Bool;
+	public var _Fired:Bool;
+	public var _XOffset:Float;
+	public var _YOffset:Float;
+	public var _BulletCreated:Actor;
+	public var shooterangle:Float;
+	public var bulletangle:Float;
+	public var speed:Float;
 	
 	/* ========================= Custom Event ========================= */
 	public function _customEvent_FireBullet():Void
@@ -102,8 +110,6 @@ class Design_14_14_FireBullet extends ActorScript
 	public function new(dummy:Int, actor:Actor, dummy2:Engine)
 	{
 		super(actor);
-		nameMap.set("Direction Mode", "_DirectionMode");
-		_DirectionMode = "";
 		nameMap.set("Actor", "actor");
 		nameMap.set("Bullet Speed", "_BulletSpeed");
 		_BulletSpeed = 50.0;
@@ -145,6 +151,23 @@ class Design_14_14_FireBullet extends ActorScript
 		_LeftAnimations = "";
 		nameMap.set("Right Animations", "_RightAnimations");
 		_RightAnimations = "";
+		nameMap.set("Direction Mode", "_DirectionMode");
+		_DirectionMode = "";
+		nameMap.set("Can Fire?", "_CanFire");
+		_CanFire = true;
+		nameMap.set("Fired", "_Fired");
+		_Fired = false;
+		nameMap.set("X Offset", "_XOffset");
+		_XOffset = 0.0;
+		nameMap.set("Y Offset", "_YOffset");
+		_YOffset = 0.0;
+		nameMap.set("Bullet Created", "_BulletCreated");
+		nameMap.set("Inital Shooter Angle", "shooterangle");
+		shooterangle = 0.0;
+		nameMap.set("Inital Bullet Angle", "bulletangle");
+		bulletangle = 270.0;
+		nameMap.set("Speed", "speed");
+		speed = 0.0;
 		
 	}
 	
@@ -197,6 +220,7 @@ class Design_14_14_FireBullet extends ActorScript
 								}
 							}, actor);
 							createRecycledActor(_BulletType, 0, 0, Script.FRONT);
+							playSound(getSound(58));
 							if((_DirectionMode == "Based on Animations"))
 							{
 								if((!((_UpAnimations) == ("")) && ((("" + actor.getAnimation())).indexOf(_UpAnimations) >= 0)))

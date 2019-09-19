@@ -43,7 +43,6 @@ import box2D.common.math.B2Vec2;
 import box2D.dynamics.B2Body;
 import box2D.dynamics.B2Fixture;
 import box2D.dynamics.joints.B2Joint;
-import box2D.collision.shapes.B2Shape;
 
 import com.stencyl.graphics.shaders.BasicShader;
 import com.stencyl.graphics.shaders.GrayscaleShader;
@@ -62,16 +61,20 @@ import com.stencyl.graphics.shaders.BloomShader;
 
 
 
-class SceneEvents_7 extends SceneScript
+class ActorEvents_7 extends ActorScript
 {
-	public var _counter:Float;
+	public var _HitCount:Float;
+	public var _Bullet:Actor;
+	public var _instance:Actor;
 	
 	
-	public function new(dummy:Int, dummy2:Engine)
+	public function new(dummy:Int, actor:Actor, dummy2:Engine)
 	{
-		super();
-		nameMap.set("counter", "_counter");
-		_counter = 0.0;
+		super(actor);
+		nameMap.set("HitCount", "_HitCount");
+		_HitCount = 0.0;
+		nameMap.set("Bullet", "_Bullet");
+		nameMap.set("instance", "_instance");
 		
 	}
 	
@@ -79,26 +82,34 @@ class SceneEvents_7 extends SceneScript
 	{
 		
 		/* ======================== When Creating ========================= */
-		_counter = 0;
+		_HitCount = 0;
+		
+		/* ======================== Something Else ======================== */
+		addCollisionListener(actor, function(event:Collision, list:Array<Dynamic>):Void
+		{
+			if(wrapper.enabled)
+			{
+				actor.setFilter([createTintFilter(Utils.getColorRGB(255,51,51), 50/100)]);
+				_HitCount = (_HitCount + 1);
+				recycleActor(actor.getLastCollidedActor());
+				runLater(1000 * 0.25, function(timeTask:TimedTask):Void
+				{
+					actor.clearFilters();
+				}, actor);
+			}
+		});
 		
 		/* ======================== When Updating ========================= */
 		addWhenUpdatedListener(null, function(elapsedTime:Float, list:Array<Dynamic>):Void
 		{
 			if(wrapper.enabled)
 			{
-				if((_counter == 22))
+				if((_HitCount == 3))
 				{
-					switchScene(GameModel.get().scenes.get(4).getID(), null, createSlideRightTransition(1));
+					actor.shout("_customEvent_" + "HandleDeath");
+					recycleActor(actor.getLastCollidedActor());
+					recycleActor(actor);
 				}
-			}
-		});
-		
-		/* ======================= Member of Group ======================== */
-		addWhenTypeGroupKilledListener(getActorGroup(4), function(eventActor:Actor, list:Array<Dynamic>):Void
-		{
-			if(wrapper.enabled)
-			{
-				_counter += 1;
 			}
 		});
 		

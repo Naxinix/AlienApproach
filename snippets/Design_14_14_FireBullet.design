@@ -118,11 +118,15 @@
                                             <int id="2" val="0"/>
                                             <int id="3" val="0"/>
                                         </create-actor3>
-                                        <if comment="false" x="59" y="729">
+                                        <play-sound4 comment="false" x="59" y="729">
+                                            <int id="0" val="0"/>
+                                            <sound eid="58" id="1"/>
+                                        </play-sound4>
+                                        <if comment="false" x="59" y="756">
                                             <group eventID="9" id="-1">
-                                                <if comment="false" x="70" y="759">
+                                                <if comment="false" x="70" y="786">
                                                     <group eventID="9" id="-1">
-                                                        <set-val-14-15 comment="false" x="81" y="812">
+                                                        <set-val-14-15 comment="false" x="81" y="839">
                                                             <int id="0" val="-90"/>
                                                         </set-val-14-15>
                                                     </group>
@@ -145,9 +149,9 @@
                                                         </moreeq>
                                                     </and>
                                                 </if>
-                                                <else-if comment="false" x="70" y="844">
+                                                <else-if comment="false" x="70" y="871">
                                                     <group eventID="9" id="-1">
-                                                        <set-val-14-15 comment="false" x="81" y="897">
+                                                        <set-val-14-15 comment="false" x="81" y="924">
                                                             <int id="0" val="90"/>
                                                         </set-val-14-15>
                                                     </group>
@@ -170,9 +174,9 @@
                                                         </moreeq>
                                                     </and>
                                                 </else-if>
-                                                <else-if comment="false" x="70" y="929">
+                                                <else-if comment="false" x="70" y="956">
                                                     <group eventID="9" id="-1">
-                                                        <set-val-14-15 comment="false" x="81" y="982">
+                                                        <set-val-14-15 comment="false" x="81" y="1009">
                                                             <int id="0" val="180"/>
                                                         </set-val-14-15>
                                                     </group>
@@ -195,9 +199,9 @@
                                                         </moreeq>
                                                     </and>
                                                 </else-if>
-                                                <else-if comment="false" x="70" y="1014">
+                                                <else-if comment="false" x="70" y="1041">
                                                     <group eventID="9" id="-1">
-                                                        <set-val-14-15 comment="false" x="81" y="1067">
+                                                        <set-val-14-15 comment="false" x="81" y="1094">
                                                             <int id="0" val="0"/>
                                                         </set-val-14-15>
                                                     </group>
@@ -226,9 +230,9 @@
                                                 <int id="1" val="Based on Animations"/>
                                             </eq>
                                         </if>
-                                        <else-if comment="false" x="59" y="1111">
+                                        <else-if comment="false" x="59" y="1138">
                                             <group eventID="9" id="-1">
-                                                <set-val-14-15 comment="false" x="70" y="1141">
+                                                <set-val-14-15 comment="false" x="70" y="1168">
                                                     <get-val-14-5 comment="false" id="0" x="0" y="0"/>
                                                 </set-val-14-15>
                                             </group>
@@ -237,9 +241,9 @@
                                                 <int id="1" val="Absolute"/>
                                             </eq>
                                         </else-if>
-                                        <else-if comment="false" x="59" y="1178">
+                                        <else-if comment="false" x="59" y="1205">
                                             <group eventID="9" id="-1">
-                                                <set-val-14-15 comment="false" x="70" y="1208">
+                                                <set-val-14-15 comment="false" x="70" y="1235">
                                                     <plus comment="false" id="0" x="0" y="0">
                                                         <getdir comment="false" id="0" x="0" y="0">
                                                             <ACTOR eid="this" id="0"/>
@@ -253,9 +257,9 @@
                                                 <int id="1" val="Relative"/>
                                             </eq>
                                         </else-if>
-                                        <if comment="false" x="59" y="1258">
+                                        <if comment="false" x="59" y="1285">
                                             <group eventID="9" id="-1">
-                                                <incdec comment="false" x="70" y="1283">
+                                                <incdec comment="false" x="70" y="1310">
                                                     <int id="0" val="25"/>
                                                     <int id="1" val="1"/>
                                                     <int id="2" val="1"/>
@@ -263,7 +267,7 @@
                                             </group>
                                             <get-val-14-26 comment="false" id="0" x="0" y="0"/>
                                         </if>
-                                        <set-xy comment="false" x="59" y="1322">
+                                        <set-xy comment="false" x="59" y="1349">
                                             <ACTOR eid="lastcreated" id="0"/>
                                             <int id="1" val="0"/>
                                             <plus comment="false" id="2" x="0" y="0">
@@ -290,7 +294,7 @@
                                                 </times>
                                             </plus>
                                         </set-xy>
-                                        <set-xy comment="false" x="59" y="1390">
+                                        <set-xy comment="false" x="59" y="1417">
                                             <ACTOR eid="lastcreated" id="0"/>
                                             <int id="1" val="1"/>
                                             <plus comment="false" id="2" x="0" y="0">
@@ -317,12 +321,12 @@
                                                 </times>
                                             </plus>
                                         </set-xy>
-                                        <setvel comment="false" x="59" y="1458">
+                                        <setvel comment="false" x="59" y="1485">
                                             <ACTOR eid="lastcreated" id="0"/>
                                             <get-val-14-15 comment="false" id="1" x="0" y="0"/>
                                             <get-val-14-2 comment="false" id="2" x="0" y="0"/>
                                         </setvel>
-                                        <actor-set-prop comment="false" x="59" y="1490">
+                                        <actor-set-prop comment="false" x="59" y="1517">
                                             <ACTOR eid="lastcreated" id="0"/>
                                             <int id="1" val="FireBullet_Creator"/>
                                             <actor comment="false" id="2" x="0" y="0">
@@ -356,6 +360,94 @@
                 </if>
             </group>
         </step>
+    </group>
+    <group eventID="-1" id="1">
+        <set-val-14-33 comment="false" x="1045" y="545">
+            <false comment="false" id="0" x="0" y="0"/>
+        </set-val-14-33>
+        <set-val-14-34 comment="false" x="1045" y="570">
+            <true comment="false" id="0" x="0" y="0"/>
+        </set-val-14-34>
+        <create-actor3 comment="false" x="1045" y="595">
+            <actortype eid="var" id="0" vid="4"/>
+            <plus comment="false" id="1" x="0" y="0">
+                <get-xy comment="false" id="0" x="0" y="0">
+                    <ACTOR eid="this" id="0"/>
+                    <int id="1" val="2"/>
+                </get-xy>
+                <get-val-14-35 comment="false" id="1" x="0" y="0"/>
+            </plus>
+            <plus comment="false" id="2" x="0" y="0">
+                <get-xy comment="false" id="0" x="0" y="0">
+                    <ACTOR eid="this" id="0"/>
+                    <int id="1" val="3"/>
+                </get-xy>
+                <get-val-14-36 comment="false" id="1" x="0" y="0"/>
+            </plus>
+            <int id="3" val="2"/>
+        </create-actor3>
+        <set-val-14-37 comment="false" x="1045" y="640">
+            <ACTOR eid="lastcreated" id="0"/>
+        </set-val-14-37>
+        <set-xy comment="false" x="1045" y="667">
+            <ACTOR eid="lastcreated" id="0"/>
+            <int id="1" val="0"/>
+            <minus comment="false" id="2" x="0" y="0">
+                <get-xy comment="false" id="0" x="0" y="0">
+                    <ACTOR eid="lastcreated" id="0"/>
+                    <int id="1" val="0"/>
+                </get-xy>
+                <div comment="false" id="1" x="0" y="0">
+                    <get-wh comment="false" id="0" x="0" y="0">
+                        <ACTOR eid="lastcreated" id="0"/>
+                        <int id="1" val="0"/>
+                    </get-wh>
+                    <int id="1" val="2"/>
+                </div>
+            </minus>
+        </set-xy>
+        <set-xy comment="false" x="1045" y="717">
+            <ACTOR eid="lastcreated" id="0"/>
+            <int id="1" val="1"/>
+            <minus comment="false" id="2" x="0" y="0">
+                <get-xy comment="false" id="0" x="0" y="0">
+                    <ACTOR eid="lastcreated" id="0"/>
+                    <int id="1" val="1"/>
+                </get-xy>
+                <div comment="false" id="1" x="0" y="0">
+                    <get-wh comment="false" id="0" x="0" y="0">
+                        <ACTOR eid="lastcreated" id="0"/>
+                        <int id="1" val="1"/>
+                    </get-wh>
+                    <int id="1" val="2"/>
+                </div>
+            </minus>
+        </set-xy>
+        <setangle comment="false" x="1045" y="767">
+            <ACTOR eid="lastcreated" id="0"/>
+            <minus comment="false" id="1" x="0" y="0">
+                <plus comment="false" id="0" x="0" y="0">
+                    <getdir comment="false" id="0" x="0" y="0">
+                        <ACTOR eid="this" id="0"/>
+                    </getdir>
+                    <get-val-14-38 comment="false" id="1" x="0" y="0"/>
+                </plus>
+                <get-val-14-39 comment="false" id="1" x="0" y="0"/>
+            </minus>
+        </setangle>
+        <setvel comment="false" x="1045" y="817">
+            <ACTOR eid="lastcreated" id="0"/>
+            <minus comment="false" id="1" x="0" y="0">
+                <plus comment="false" id="0" x="0" y="0">
+                    <getdir comment="false" id="0" x="0" y="0">
+                        <ACTOR eid="this" id="0"/>
+                    </getdir>
+                    <get-val-14-38 comment="false" id="1" x="0" y="0"/>
+                </plus>
+                <int id="1" val="180"/>
+            </minus>
+            <get-val-14-40 comment="false" id="2" x="0" y="0"/>
+        </setvel>
     </group>
     <group eventID="9" id="-1"/>
     <group eventID="10" id="0">
