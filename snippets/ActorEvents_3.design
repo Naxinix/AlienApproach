@@ -24,7 +24,7 @@
             </group>
         </step>
     </group>
-    <group eventID="2" id="2">
+    <group eventID="2" id="1">
         <set-val-21-1 comment="false" x="529" y="325">
             <plus comment="false" id="0" x="0" y="0">
                 <get-val-21-1 comment="false" id="0" x="0" y="0"/>

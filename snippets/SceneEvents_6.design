@@ -26,6 +26,9 @@
                 <set-val-33-1 comment="false" x="26" y="40">
                     <int id="0" val="0"/>
                 </set-val-33-1>
+                <set-val-33-2 comment="false" x="26" y="60">
+                    <int id="0" val="0"/>
+                </set-val-33-2>
             </group>
         </init>
     </group>
@@ -34,7 +37,7 @@
         <event-group-create-kill comment="false" x="15" y="15">
             <group eventID="3" id="-1">
                 <incdec comment="false" x="26" y="47">
-                    <int id="0" val="0"/>
+                    <int id="0" val="1"/>
                     <int id="1" val="0"/>
                     <int id="2" val="1"/>
                 </incdec>
@@ -44,4 +47,23 @@
         </event-group-create-kill>
     </group>
     <group eventID="3" id="-1"/>
+    <group eventID="4" id="0">
+        <event-collide-typetotype comment="false" x="15" y="15">
+            <group eventID="4" id="-1">
+                <set-val-33-2 comment="false" x="26" y="47">
+                    <plus comment="false" id="0" x="0" y="0">
+                        <get-val-33-2 comment="false" id="0" x="0" y="0"/>
+                        <int id="1" val="1"/>
+                    </plus>
+                </set-val-33-2>
+                <setanim comment="false" x="26" y="77">
+                    <ACTOR eid="13" id="0"/>
+                    <get-val-33-2 comment="false" id="1" x="0" y="0"/>
+                </setanim>
+            </group>
+            <actortype eid="1" id="0"/>
+            <actortype eid="42" id="1"/>
+        </event-collide-typetotype>
+    </group>
+    <group eventID="4" id="-1"/>
 </groups>

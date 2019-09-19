@@ -21,7 +21,8 @@
         <actor a="0.0" aid="9" c="false" group="4" id="7" name="Alien Cruiser 9" order="8" sx="1.0" sy="1.0" x="458" y="63" z="2"/>
         <actor a="0.0" aid="10" c="false" group="4" id="7" name="Alien Cruiser 10" order="9" sx="1.0" sy="1.0" x="547" y="64" z="2"/>
         <actor a="0.0" aid="11" c="false" group="4" id="3" name="Alien Saucer 11" order="10" sx="1.0" sy="1.0" x="297" y="61" z="2"/>
-        <actor a="0.0" aid="12" c="false" group="3" id="1" name="Player Tank 12" order="11" sx="1.0" sy="1.0" x="306" y="411" z="2"/>
+        <actor a="0.0" aid="12" c="false" group="3" id="1" name="Player Tank 12" order="11" sx="1.0" sy="1.0" x="268" y="416" z="2"/>
+        <actor a="0.0" aid="13" c="false" group="3" id="44" name="Lives 13" order="12" sx="1.4" sy="1.4" x="484" y="7" z="2"/>
     </actors>
     <snippets/>
     <terrain/>

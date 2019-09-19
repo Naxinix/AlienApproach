@@ -26,7 +26,7 @@
                     <int id="0" val="Don&amp;apos;t go off the right side."/>
                 </comment-long>
                 <if comment="false" x="26" y="277">
-                    <group eventID="-1" id="-1">
+                    <group eventID="1" id="-1">
                         <set-xy comment="false" x="37" y="320">
                             <ACTOR eid="this" id="0"/>
                             <int id="1" val="0"/>

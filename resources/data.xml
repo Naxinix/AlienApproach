@@ -101,13 +101,21 @@
         </snippets>
     </actor>
     <sprite atlasID="0" default="0" defaultAnimation="0" desc="" id="4" name="Alien Saucer" readable="false" shared="false">
-        <anim across="1" down="1" durations="100" height="64" id="0" loop="true" name="Animation 0" numframes="1" originx="31" originy="32" sync="false" version="2" width="63">
+        <anim across="2" down="1" durations="100,100" height="64" id="0" loop="true" name="Animation 0" numframes="2" originx="31" originy="32" sync="false" version="2" width="126">
             <poly data="4,0,0,64,0,64,64,0,64" density="0.1" fric="0.2" gid="-1000" id="0" name="Animation 0" rest="0.0" sensor="false"/>
         </anim>
     </sprite>
     <sprite atlasID="0" default="0" defaultAnimation="0" desc="" id="6" name="Alien Triangle" readable="false" shared="false">
         <anim across="1" down="1" durations="100" height="64" id="0" loop="true" name="Animation 0" numframes="1" originx="35" originy="32" sync="false" version="2" width="70">
             <poly data="4,0,0,64,0,64,64,0,64" density="0.1" fric="0.2" gid="-1000" id="0" name="Animation 0" rest="0.0" sensor="false"/>
+        </anim>
+    </sprite>
+    <actor adamp="0.0" ascale="true" atlasID="0" bodytype="2" continuous="true" desc="" eventsnippetid="38" fixedrot="false" fric="0.2" gid="3" id="50" ignoreg="false" inertia="1.0" ldamp="0.0" mass="1.0" name="Defeat_text" oid="-1" pausable="true" physicsMode="0" rest="0.0" shared="false" sprite="51" static="false">
+        <snippets/>
+    </actor>
+    <sprite atlasID="0" default="0" defaultAnimation="0" desc="" id="51" name="Defeat_text" readable="false" shared="false">
+        <anim across="1" down="1" durations="100" height="153" id="0" loop="true" name="Animation 0" numframes="1" originx="150" originy="76" sync="false" version="2" width="300">
+            <poly data="4,0,0,300,0,300,153,0,153" density="0.1" fric="0.2" gid="-1000" id="0" name="Animation 0" rest="0.0" sensor="false"/>
         </anim>
     </sprite>
     <background atlasID="0" desc="" durations="100" dx="-0.0" dy="-0.0" height="480" id="18" name="Desert Background" numframes="1" oid="-1" readable="false" repeats="false" resized="false" shared="false" width="640" xpf="1.0" ypf="1.0"/>
@@ -145,6 +153,26 @@
             <poly data="4,0,0,466,0,466,128,0,128" density="0.1" fric="0.2" gid="-1000" id="0" name="Animation 0" rest="0.0" sensor="false"/>
         </anim>
     </sprite>
+    <actor adamp="0.0" ascale="true" atlasID="0" bodytype="0" continuous="true" desc="" eventsnippetid="35" fixedrot="true" fric="0.2" gid="3" id="44" ignoreg="true" inertia="1.0" ldamp="0.0" mass="1.0" name="Lives" oid="-1" pausable="true" physicsMode="0" rest="0.0" shared="false" sprite="45" static="true">
+        <snippets/>
+    </actor>
+    <sprite atlasID="0" default="0" defaultAnimation="0" desc="" id="45" name="Lives" readable="false" shared="false">
+        <anim across="1" down="1" durations="100" height="20" id="0" loop="false" name="0" numframes="1" originx="75" originy="10" sync="false" version="2" width="150">
+            <poly data="4,0,0,150,0,150,20,0,20" density="0.1" fric="0.2" gid="-1000" id="0" name="Animation 0" rest="0.0" sensor="false"/>
+        </anim>
+        <anim across="1" down="1" durations="100" height="20" id="1" loop="true" name="1" numframes="1" originx="75" originy="10" sync="false" version="2" width="150">
+            <poly data="4,0,0,150,0,150,20,0,20" density="0.1" fric="0.2" gid="-1000" id="0" name="Animation 1" rest="0.0" sensor="false"/>
+        </anim>
+        <anim across="1" down="1" durations="100" height="20" id="2" loop="true" name="2" numframes="1" originx="75" originy="10" sync="false" version="2" width="150">
+            <poly data="4,0,0,150,0,150,20,0,20" density="0.1" fric="0.2" gid="-1000" id="0" name="Animation 2" rest="0.0" sensor="false"/>
+        </anim>
+        <anim across="1" down="1" durations="100" height="20" id="3" loop="true" name="3" numframes="1" originx="75" originy="10" sync="false" version="2" width="150">
+            <poly data="4,0,0,150,0,150,20,0,20" density="0.1" fric="0.2" gid="-1000" id="0" name="Animation 3" rest="0.0" sensor="false"/>
+        </anim>
+        <anim across="1" down="1" durations="100" height="20" id="4" loop="true" name="4" numframes="1" originx="75" originy="10" sync="false" version="2" width="150">
+            <poly data="4,0,0,150,0,150,20,0,20" density="0.1" fric="0.2" gid="-1000" id="0" name="Animation 4" rest="0.0" sensor="false"/>
+        </anim>
+    </sprite>
     <background atlasID="0" desc="" durations="100" dx="-0.0" dy="-0.0" height="480" id="31" name="Lleno" numframes="1" oid="-1" readable="false" repeats="false" resized="false" shared="false" width="640" xpf="1.0" ypf="1.0"/>
     <actor adamp="0.0" ascale="true" atlasID="0" bodytype="2" continuous="true" desc="" eventsnippetid="24" fixedrot="false" fric="0.2" gid="3" id="23" ignoreg="false" inertia="1.0" ldamp="0.0" mass="1.0" name="Logo" oid="-1" pausable="true" physicsMode="0" rest="0.0" shared="false" sprite="24" static="false">
         <snippets/>
@@ -152,6 +180,14 @@
     <sprite atlasID="0" default="0" defaultAnimation="0" desc="" id="24" name="Logo" readable="false" shared="false">
         <anim across="1" down="1" durations="100" height="456" id="0" loop="true" name="Animation 0" numframes="1" originx="326" originy="228" sync="false" version="2" width="653">
             <poly data="4,0,0,653,0,653,456,0,456" density="0.1" fric="0.2" gid="-1000" id="0" name="Animation 0" rest="0.0" sensor="false"/>
+        </anim>
+    </sprite>
+    <actor adamp="0.0" ascale="true" atlasID="0" bodytype="2" continuous="true" desc="" eventsnippetid="37" fixedrot="false" fric="0.2" gid="3" id="48" ignoreg="false" inertia="1.0" ldamp="0.0" mass="1.0" name="Menu_button" oid="-1" pausable="true" physicsMode="0" rest="0.0" shared="false" sprite="49" static="false">
+        <snippets/>
+    </actor>
+    <sprite atlasID="0" default="0" defaultAnimation="0" desc="" id="49" name="Menu_button" readable="false" shared="false">
+        <anim across="1" down="1" durations="100" height="128" id="0" loop="true" name="Animation 0" numframes="1" originx="233" originy="64" sync="false" version="2" width="466">
+            <poly data="4,0,0,466,0,466,128,0,128" density="0.1" fric="0.2" gid="-1000" id="0" name="Animation 0" rest="0.0" sensor="false"/>
         </anim>
     </sprite>
     <actor adamp="0.0" ascale="true" atlasID="0" bodytype="2" continuous="true" desc="" eventsnippetid="25" fixedrot="false" fric="0.2" gid="3" id="26" ignoreg="false" inertia="1.0" ldamp="0.0" mass="1.0" name="Menu_Terry" oid="-1" pausable="true" physicsMode="0" rest="0.0" shared="false" sprite="27" static="false">
@@ -198,7 +234,7 @@
         </snippets>
     </actor>
     <sprite atlasID="0" default="0" defaultAnimation="0" desc="" id="10" name="Player Projectile" readable="false" shared="false">
-        <anim across="2" down="1" durations="70,70" height="23" id="0" loop="true" name="Animation 0" numframes="2" originx="8" originy="11" sync="false" version="1" width="34">
+        <anim across="2" down="1" durations="100,100" height="46" id="0" loop="true" name="Animation 0" numframes="2" originx="17" originy="23" sync="false" version="2" width="68">
             <poly data="4,0,0,17,0,17,23,0,23" density="0.1" fric="0.2" gid="-1000" id="0" name="Animation 0" rest="0.0" sensor="true"/>
         </anim>
     </sprite>
@@ -277,7 +313,7 @@
         </snippets>
     </actor>
     <sprite atlasID="0" default="0" defaultAnimation="0" desc="" id="2" name="Player Tank" readable="false" shared="false">
-        <anim across="1" down="1" durations="100" height="64" id="0" loop="true" name="Animation 0" numframes="1" originx="32" originy="32" sync="false" version="1" width="64">
+        <anim across="1" down="1" durations="100" height="64" id="0" loop="true" name="Animation 0" numframes="1" originx="32" originy="32" sync="false" version="2" width="64">
             <poly data="4,0,0,64,0,64,64,0,64" density="0.1" fric="0.2" gid="-1000" id="0" name="Animation 0" rest="0.0" sensor="false"/>
         </anim>
     </sprite>
@@ -298,4 +334,12 @@
         </anim>
     </sprite>
     <background atlasID="0" desc="" durations="100" dx="-0.0" dy="-0.0" height="480" id="30" name="Vacio" numframes="1" oid="-1" readable="false" repeats="false" resized="false" shared="false" width="640" xpf="1.0" ypf="1.0"/>
+    <actor adamp="0.0" ascale="true" atlasID="0" bodytype="2" continuous="true" desc="" eventsnippetid="36" fixedrot="false" fric="0.2" gid="3" id="46" ignoreg="false" inertia="1.0" ldamp="0.0" mass="1.0" name="Victory_Text" oid="-1" pausable="true" physicsMode="0" rest="0.0" shared="false" sprite="47" static="false">
+        <snippets/>
+    </actor>
+    <sprite atlasID="0" default="0" defaultAnimation="0" desc="" id="47" name="Victory_Text" readable="false" shared="false">
+        <anim across="1" down="1" durations="100" height="153" id="0" loop="true" name="Animation 0" numframes="1" originx="150" originy="76" sync="false" version="2" width="300">
+            <poly data="4,0,0,300,0,300,153,0,153" density="0.1" fric="0.2" gid="-1000" id="0" name="Animation 0" rest="0.0" sensor="false"/>
+        </anim>
+    </sprite>
 </pack>
