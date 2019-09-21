@@ -94,7 +94,7 @@ class ActorEvents_1 extends ActorScript
 			{
 				if((_lives < 1))
 				{
-					switchScene(GameModel.get().scenes.get(3).getID(), null, createCrossfadeTransition(1));
+					switchScene(GameModel.get().scenes.get(10).getID(), null, createCrossfadeTransition(1));
 				}
 			}
 		});

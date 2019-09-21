@@ -6,7 +6,7 @@
                 <if comment="false" x="26" y="40">
                     <group eventID="4" id="-1">
                         <scene-change-through comment="false" x="37" y="70">
-                            <scene eid="3" id="0"/>
+                            <scene eid="10" id="0"/>
                             <int id="1" val="0"/>
                             <int id="2" val="1"/>
                         </scene-change-through>

@@ -75,12 +75,12 @@ class Design_2_2_ExplodeonDeath extends ActorScript
 		playSound(_SoundtoPlay);
 		for(index0 in 0...Std.int(_NumberofActorstoCreate))
 		{
-			createRecycledActor(getActorType(11), (actor.getX() + (actor.getWidth()/2)), (actor.getY() + (actor.getHeight()/2)), Script.FRONT);
+			createRecycledActor(getActorType(69), (actor.getX() + (actor.getWidth()/2)), (actor.getY() + (actor.getHeight()/2)), Script.FRONT);
 			getLastCreatedActor().applyImpulseInDirection(randomInt(1, 360), _ExplosionForce);
 		}
 		for(index0 in 0...Std.int(_NumberofSecondActorstoCreate))
 		{
-			createRecycledActor(getActorType(13), (actor.getX() + (actor.getWidth()/2)), (actor.getY() + (actor.getHeight()/2)), Script.FRONT);
+			createRecycledActor(getActorType(71), (actor.getX() + (actor.getWidth()/2)), (actor.getY() + (actor.getHeight()/2)), Script.FRONT);
 			getLastCreatedActor().applyImpulseInDirection(randomInt(1, 360), _ExplosionForceofSecondActors);
 		}
 	}

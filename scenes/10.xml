@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<scene depth="2" desc="" eventsnippetid="43" extheight="544" extwidth="704" extx="-32" exty="-32" format="4.0.1" gravx="-0.0" gravy="0.0" height="480" id="10" name="Defeated" revision="" savecount="0" tiled="1" tileh="32" tilew="32" type="standard" width="640">
+    <layers>
+        <color-bg blue="0" green="0" red="0"/>
+        <layer blendMode="normal" color="100,168,234" id="0" locked="false" name="Layer 0" opacity="100" order="2" scrollFactorX="1.0" scrollFactorY="1.0" visible="true"/>
+        <background blendMode="normal" customScrollFactor="false" id="1" locked="true" name="Vacio" opacity="100" order="1" rid="30" scrollFactorX="1.0" scrollFactorY="1.0" visible="true"/>
+        <layer blendMode="normal" color="0,255,0" id="2" locked="false" name="Layer 2" opacity="100" order="0" scrollFactorX="1.0" scrollFactorY="1.0" visible="true"/>
+    </layers>
+    <joints/>
+    <regions/>
+    <terrainRegions/>
+    <actors>
+        <actor a="0.0" aid="2" c="false" group="3" id="48" name="Menu_button 2" order="0" sx="1.0" sy="1.0" x="77" y="254" z="2"/>
+        <actor a="0.0" aid="3" c="false" group="3" id="50" name="Defeat_text 3" order="1" sx="1.0" sy="1.0" x="183" y="40" z="2"/>
+    </actors>
+    <snippets/>
+    <terrain/>
+    <atlases members="" retainAtlases="true"/>
+</scene>

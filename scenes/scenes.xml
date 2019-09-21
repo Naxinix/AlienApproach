@@ -2,10 +2,10 @@
 <scenes>
     <scene desc="" format="4.0.1" id="1" name="Level 1"/>
     <scene desc="" format="4.0.1" id="2" name="Menu"/>
-    <scene desc="" format="4.0.1" id="3" name="Defeat"/>
     <scene desc="" format="4.0.1" id="4" name="Victory"/>
     <scene desc="" format="4.0.1" id="5" name="Select_Mode"/>
     <scene desc="" format="4.0.1" id="6" name="Easy_Level"/>
-    <scene desc="" format="4.0.1" id="7" name="Hard_Level"/>
     <scene desc="" format="4.0.1" id="8" name="Normal Level"/>
+    <scene desc="" format="4.0.1" id="9" name="Hard"/>
+    <scene desc="" format="4.0.1" id="10" name="Defeated"/>
 </scenes>

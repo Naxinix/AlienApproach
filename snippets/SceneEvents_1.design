@@ -27,7 +27,7 @@
                     </group>
                     <eq comment="false" id="0" x="0" y="0">
                         <get-val-12-1 comment="false" id="0" x="0" y="0"/>
-                        <int id="1" val="27"/>
+                        <int id="1" val="20"/>
                     </eq>
                 </if>
             </group>
@@ -95,7 +95,7 @@
                     </plus>
                 </set-val-12-4>
                 <setanim comment="false" x="26" y="77">
-                    <ACTOR eid="34" id="0"/>
+                    <ACTOR eid="22" id="0"/>
                     <get-val-12-4 comment="false" id="1" x="0" y="0"/>
                 </setanim>
             </group>

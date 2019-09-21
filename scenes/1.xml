@@ -12,30 +12,28 @@
     <regions/>
     <terrainRegions/>
     <actors>
-        <actor a="0.0" aid="2" c="false" group="4" id="3" name="Alien Saucer 2" order="0" sx="1.0" sy="1.0" x="64" y="32" z="0"/>
-        <actor a="0.0" aid="3" c="false" group="4" id="3" name="Alien Saucer 3" order="1" sx="1.0" sy="1.0" x="128" y="32" z="0"/>
-        <actor a="0.0" aid="4" c="false" group="4" id="3" name="Alien Saucer 4" order="2" sx="1.0" sy="1.0" x="192" y="32" z="0"/>
-        <actor a="0.0" aid="5" c="false" group="4" id="3" name="Alien Saucer 5" order="3" sx="1.0" sy="1.0" x="256" y="32" z="0"/>
-        <actor a="0.0" aid="6" c="false" group="4" id="3" name="Alien Saucer 6" order="4" sx="1.0" sy="1.0" x="320" y="32" z="0"/>
-        <actor a="0.0" aid="7" c="false" group="4" id="3" name="Alien Saucer 7" order="5" sx="1.0" sy="1.0" x="384" y="32" z="0"/>
-        <actor a="0.0" aid="8" c="false" group="4" id="3" name="Alien Saucer 8" order="6" sx="1.0" sy="1.0" x="448" y="32" z="0"/>
-        <actor a="0.0" aid="9" c="false" group="4" id="3" name="Alien Saucer 9" order="7" sx="1.0" sy="1.0" x="512" y="32" z="0"/>
-        <actor a="0.0" aid="18" c="false" group="4" id="7" name="Alien Cruiser 18" order="8" sx="1.0" sy="1.0" x="64" y="160" z="0"/>
-        <actor a="0.0" aid="19" c="false" group="4" id="7" name="Alien Cruiser 19" order="9" sx="1.0" sy="1.0" x="128" y="100" z="0"/>
-        <actor a="0.0" aid="20" c="false" group="4" id="7" name="Alien Cruiser 20" order="10" sx="1.0" sy="1.0" x="518" y="159" z="0"/>
-        <actor a="0.0" aid="21" c="false" group="4" id="7" name="Alien Cruiser 21" order="11" sx="1.0" sy="1.0" x="192" y="96" z="0"/>
-        <actor a="0.0" aid="22" c="false" group="4" id="7" name="Alien Cruiser 22" order="12" sx="1.0" sy="1.0" x="256" y="96" z="0"/>
-        <actor a="0.0" aid="23" c="false" group="4" id="7" name="Alien Cruiser 23" order="13" sx="1.0" sy="1.0" x="320" y="96" z="0"/>
-        <actor a="0.0" aid="24" c="false" group="4" id="7" name="Alien Cruiser 24" order="14" sx="1.0" sy="1.0" x="384" y="96" z="0"/>
-        <actor a="0.0" aid="25" c="false" group="4" id="7" name="Alien Cruiser 25" order="15" sx="1.0" sy="1.0" x="448" y="96" z="0"/>
-        <actor a="0.0" aid="26" c="false" group="4" id="5" name="Alien Grabber 26" order="16" sx="1.0" sy="1.0" x="187" y="160" z="0"/>
-        <actor a="0.0" aid="27" c="false" group="4" id="5" name="Alien Grabber 27" order="17" sx="1.0" sy="1.0" x="256" y="160" z="0"/>
-        <actor a="0.0" aid="28" c="false" group="4" id="5" name="Alien Grabber 28" order="18" sx="1.0" sy="1.0" x="320" y="160" z="0"/>
-        <actor a="0.0" aid="29" c="false" group="4" id="5" name="Alien Grabber 29" order="19" sx="1.0" sy="1.0" x="384" y="160" z="0"/>
-        <actor a="0.0" aid="30" c="false" group="4" id="5" name="Alien Grabber 30" order="20" sx="1.0" sy="1.0" x="448" y="160" z="0"/>
-        <actor a="0.0" aid="31" c="false" group="4" id="5" name="Alien Grabber 31" order="21" sx="1.0" sy="1.0" x="116" y="167" z="0"/>
-        <actor a="0.0" aid="33" c="false" group="3" id="1" name="Player Tank 33" order="22" sx="1.0" sy="1.0" x="298" y="415" z="0"/>
-        <actor a="0.0" aid="34" c="false" group="3" id="44" name="Lives 34" order="0" sx="1.5" sy="1.5" x="486" y="9" z="1"/>
+        <actor a="0.0" aid="1" c="false" group="4" id="3" name="Alien Saucer 1" order="0" sx="1.0" sy="1.0" x="43" y="32" z="1"/>
+        <actor a="0.0" aid="2" c="false" group="4" id="3" name="Alien Saucer 2" order="1" sx="1.0" sy="1.0" x="148" y="32" z="1"/>
+        <actor a="0.0" aid="3" c="false" group="4" id="3" name="Alien Saucer 3" order="2" sx="1.0" sy="1.0" x="247" y="32" z="1"/>
+        <actor a="0.0" aid="4" c="false" group="4" id="3" name="Alien Saucer 4" order="3" sx="1.0" sy="1.0" x="341" y="34" z="1"/>
+        <actor a="0.0" aid="5" c="false" group="4" id="3" name="Alien Saucer 5" order="4" sx="1.0" sy="1.0" x="433" y="33" z="1"/>
+        <actor a="0.0" aid="6" c="false" group="4" id="3" name="Alien Saucer 6" order="5" sx="1.0" sy="1.0" x="525" y="36" z="1"/>
+        <actor a="0.0" aid="7" c="false" group="4" id="7" name="Alien Cruiser 7" order="6" sx="1.0" sy="1.0" x="32" y="128" z="1"/>
+        <actor a="0.0" aid="8" c="false" group="4" id="7" name="Alien Cruiser 8" order="7" sx="1.0" sy="1.0" x="544" y="128" z="1"/>
+        <actor a="0.0" aid="9" c="false" group="4" id="7" name="Alien Cruiser 9" order="8" sx="1.0" sy="1.0" x="288" y="128" z="1"/>
+        <actor a="0.0" aid="10" c="false" group="4" id="7" name="Alien Cruiser 10" order="9" sx="1.0" sy="1.0" x="416" y="128" z="1"/>
+        <actor a="0.0" aid="11" c="false" group="4" id="7" name="Alien Cruiser 11" order="10" sx="1.0" sy="1.0" x="160" y="128" z="1"/>
+        <actor a="0.0" aid="12" c="false" group="4" id="5" name="Alien Grabber 12" order="11" sx="1.0" sy="1.0" x="85" y="129" z="1"/>
+        <actor a="0.0" aid="13" c="false" group="4" id="5" name="Alien Grabber 13" order="12" sx="1.0" sy="1.0" x="214" y="130" z="1"/>
+        <actor a="0.0" aid="14" c="false" group="4" id="5" name="Alien Grabber 14" order="13" sx="1.0" sy="1.0" x="340" y="128" z="1"/>
+        <actor a="0.0" aid="15" c="false" group="4" id="5" name="Alien Grabber 15" order="14" sx="1.0" sy="1.0" x="470" y="129" z="1"/>
+        <actor a="0.0" aid="16" c="false" group="4" id="5" name="Alien Grabber 16" order="15" sx="1.0" sy="1.0" x="18" y="202" z="1"/>
+        <actor a="0.0" aid="17" c="false" group="4" id="5" name="Alien Grabber 17" order="16" sx="1.0" sy="1.0" x="143" y="205" z="1"/>
+        <actor a="0.0" aid="18" c="false" group="4" id="5" name="Alien Grabber 18" order="17" sx="1.0" sy="1.0" x="274" y="208" z="1"/>
+        <actor a="0.0" aid="19" c="false" group="4" id="5" name="Alien Grabber 19" order="18" sx="1.0" sy="1.0" x="403" y="205" z="1"/>
+        <actor a="0.0" aid="20" c="false" group="4" id="5" name="Alien Grabber 20" order="19" sx="1.0" sy="1.0" x="530" y="203" z="1"/>
+        <actor a="0.0" aid="21" c="false" group="3" id="1" name="Player Tank 21" order="20" sx="1.0" sy="1.0" x="288" y="414" z="1"/>
+        <actor a="0.0" aid="22" c="false" group="3" id="44" name="Lives 22" order="21" sx="1.5" sy="1.5" x="484" y="12" z="1"/>
     </actors>
     <snippets/>
     <terrain/>
