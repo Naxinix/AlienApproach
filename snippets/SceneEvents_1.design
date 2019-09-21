@@ -66,11 +66,42 @@
     <group eventID="6" id="0">
         <init comment="false" x="15" y="15">
             <group eventID="6" id="-1">
-                <set-val-12-1 comment="false" x="26" y="40">
+                <stop-sounds comment="false" x="26" y="40"/>
+                <play-sound4 comment="false" x="26" y="60">
+                    <int id="0" val="0"/>
+                    <sound eid="68" id="1"/>
+                </play-sound4>
+                <play-sound4 comment="false" x="26" y="87">
+                    <int id="0" val="1"/>
+                    <sound eid="64" id="1"/>
+                </play-sound4>
+                <set-val-12-1 comment="false" x="26" y="114">
                     <int id="0" val="0"/>
                 </set-val-12-1>
+                <set-val-12-4 comment="false" x="26" y="134">
+                    <int id="0" val="0"/>
+                </set-val-12-4>
             </group>
         </init>
     </group>
     <group eventID="6" id="-1"/>
+    <group eventID="7" id="0">
+        <event-collide-typetotype comment="false" x="15" y="15">
+            <group eventID="7" id="-1">
+                <set-val-12-4 comment="false" x="26" y="47">
+                    <plus comment="false" id="0" x="0" y="0">
+                        <get-val-12-4 comment="false" id="0" x="0" y="0"/>
+                        <int id="1" val="1"/>
+                    </plus>
+                </set-val-12-4>
+                <setanim comment="false" x="26" y="77">
+                    <ACTOR eid="34" id="0"/>
+                    <get-val-12-4 comment="false" id="1" x="0" y="0"/>
+                </setanim>
+            </group>
+            <actortype eid="1" id="0"/>
+            <actortype eid="42" id="1"/>
+        </event-collide-typetotype>
+    </group>
+    <group eventID="7" id="-1"/>
 </groups>

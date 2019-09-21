@@ -3,7 +3,11 @@
     <group eventID="1" id="0">
         <event-mouse-enter-exit-actor comment="false" x="28" y="25">
             <group eventID="1" id="-1">
-                <scene-change-through comment="false" x="39" y="52">
+                <play-sound4 comment="false" x="39" y="52">
+                    <int id="0" val="0"/>
+                    <sound eid="68" id="1"/>
+                </play-sound4>
+                <scene-change-through comment="false" x="39" y="79">
                     <scene eid="5" id="0"/>
                     <int id="1" val="4"/>
                     <int id="2" val="0.5"/>

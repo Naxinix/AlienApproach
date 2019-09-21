@@ -43,6 +43,7 @@ import box2D.common.math.B2Vec2;
 import box2D.dynamics.B2Body;
 import box2D.dynamics.B2Fixture;
 import box2D.dynamics.joints.B2Joint;
+import box2D.collision.shapes.B2Shape;
 
 import com.stencyl.graphics.shaders.BasicShader;
 import com.stencyl.graphics.shaders.GrayscaleShader;
@@ -61,50 +62,21 @@ import com.stencyl.graphics.shaders.BloomShader;
 
 
 
-class ActorEvents_5 extends ActorScript
+class SceneEvents_2 extends SceneScript
 {
-	public var _Fire:Bool;
 	
-	/* ========================= Custom Event ========================= */
-	public function _customEvent_FireBullet():Void
+	
+	public function new(dummy:Int, dummy2:Engine)
 	{
-		_Fire = true;
-	}
-	
-	
-	public function new(dummy:Int, actor:Actor, dummy2:Engine)
-	{
-		super(actor);
-		nameMap.set("Fire", "_Fire");
-		_Fire = false;
+		super();
 		
 	}
 	
 	override public function init()
 	{
 		
-		/* ======================= Every N seconds ======================== */
-		runPeriodically(1000 * 2, function(timeTask:TimedTask):Void
-		{
-			if(wrapper.enabled)
-			{
-				if((randomFloat() > 0.5))
-				{
-					actor.say("Fire Bullet", "_customEvent_" + "FireBullet");
-				}
-			}
-		}, actor);
-		
-		/* ======================== Actor of Type ========================= */
-		addCollisionListener(actor, function(event:Collision, list:Array<Dynamic>):Void
-		{
-			if(wrapper.enabled && sameAsAny(getActorType(9), event.otherActor.getType(),event.otherActor.getGroup()))
-			{
-				actor.shout("_customEvent_" + "HandleDeath");
-				recycleActor(actor.getLastCollidedActor());
-				recycleActor(actor);
-			}
-		});
+		/* ======================== When Creating ========================= */
+		playSound(getSound(62));
 		
 	}
 	
